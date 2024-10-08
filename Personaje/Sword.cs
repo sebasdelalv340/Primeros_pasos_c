@@ -2,7 +2,7 @@ namespace Personaje;
 
 public class Sword: Weapon
 {
-    protected Sword() : base("Sword", 3)
+    public Sword() : base("Sword", 3)
     {
     }
 

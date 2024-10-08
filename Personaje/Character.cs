@@ -9,8 +9,8 @@ public class Character
     public int MaxHitPoints { get; set; } = 100;
     public int BaseDamage { get; set; } = 3;
     public int BaseArmor { get; set; } = 2;
-    private int Health { get; set; } = 100;
-    private List<IItem> _inventory = [];
+    public int Health { get; set; } = 60;
+    public List<IItem> _inventory = [];
 
     public Character(string name)
     {
@@ -20,14 +20,7 @@ public class Character
     public int Attack(Weapon weapon)
     {
         weapon.Apply(this);
-        int damage = BaseDamage;
-        if (BaseDamage > MaxHitPoints)
-        {
-            damage = MaxHitPoints;
-        }
-
-        return damage;
-
+        return BaseDamage;
     }
 
     public int Defense(Protection protection)

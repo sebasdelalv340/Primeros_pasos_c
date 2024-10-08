@@ -1,0 +1,15 @@
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.AssemblyInfoInputs.cache
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.AssemblyInfo.cs
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.csproj.CoreCompileInputs.cache
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.sourcelink.json
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\bin\Debug\net8.0\Personaje.exe
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\bin\Debug\net8.0\Personaje.deps.json
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\bin\Debug\net8.0\Personaje.runtimeconfig.json
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\bin\Debug\net8.0\Personaje.dll
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\bin\Debug\net8.0\Personaje.pdb
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.dll
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\refint\Personaje.dll
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.pdb
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\Personaje.genruntimeconfig.cache
+C:\Users\Sebastián\RiderProjects\Personaje\Personaje\obj\Debug\net8.0\ref\Personaje.dll
