@@ -15,6 +15,11 @@ personaje1.AddInventory(armadura);
 personaje2.AddInventory(hacha);
 personaje2.AddInventory(casco);
 
+Minion lobo = new Minion("Lobo", 1, 20);
+
+Action <Minion> myAction;
+myAction = (c) => c.Attack();
+myAction.Invoke(lobo);
 
 
 

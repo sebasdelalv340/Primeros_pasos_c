@@ -1,24 +1,17 @@
 namespace Personaje;
 
-public abstract class Minion: IMinion
+public class Minion(string name, int damage, int health): IMinion
 {
-    private string Name { get; set; }
-    private int Damage { get; set; }
-    private int Health { get; set; }
-
-    protected Minion(string name, int damage, int health)
-    {
-        Name = name;
-        Damage = damage;
-        Health = health;
-    }
+    public string Name = name;
+    public int Damage = damage;
+    public int Health = health;
         
-    public void Attack(int damage)
+    public virtual int Attack()
     {
-        Damage += damage;
+        return Damage;
     }
 
-    public void ReceiveDamage(int damage)
+    public virtual void ReceiveDamage(int damage)
     {
         Health -= damage;
         if (Health < 0)

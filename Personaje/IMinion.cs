@@ -2,6 +2,6 @@ namespace Personaje;
 
 public interface IMinion
 {
-    public void Attack(int damage);
+    public int Attack();
     public void ReceiveDamage(int damage);
 }

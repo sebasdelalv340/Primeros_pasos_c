@@ -11,9 +11,7 @@ public class CharacterTest
         var character = new Character("Test");
         var weapon = new Sword();
         character.AddInventory(weapon);
-
         var damage = character.Attack();
-
         Assert.AreEqual(6, damage);
     }
 
