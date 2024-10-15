@@ -1,10 +1,5 @@
 namespace Personaje;
 
-public class Sword: Weapon
+public class Sword(): Weapon("Sword", 3)
 {
-    public Sword() : base("Sword", 3)
-    {
-    }
-
-    
 }

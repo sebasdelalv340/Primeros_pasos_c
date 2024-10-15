@@ -1,19 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Personaje;
 
 namespace Personaje.Tests;
 
 [TestClass]
 public class CharacterTest
 {
-
     [TestMethod]
     public void AttackTest()
     {
         var character = new Character("Test");
         var weapon = new Sword();
+        character.AddInventory(weapon);
 
-        var damage = character.Attack(weapon);
+        var damage = character.Attack();
 
         Assert.AreEqual(6, damage);
     }
@@ -23,9 +22,8 @@ public class CharacterTest
     {
         var character = new Character("Test");
         var protection = new Shield();
-
-        var armor = character.Defense(protection);
-
+        character.AddInventory(protection);
+        var armor = character.Defense();
         Assert.AreEqual(4, armor);
     }
 
@@ -53,6 +51,6 @@ public class CharacterTest
         var character = new Character("Test");
         var item = new Axe();
         character.AddInventory(item);
-        Assert.AreEqual(1, character._inventory.Count);
+        Assert.AreEqual(1, character.Inventory.Count);
     }
 }

@@ -1,31 +1,25 @@
 ﻿
-using System.Collections;
-
 namespace Personaje;
 
-public class Character
+public class Character(string name)
 {
-    public string Name { get; set; }
-    public int MaxHitPoints { get; set; } = 100;
+    public string Name = name;
+    private int MaxHitPoints { get; set; } = 100;
     public int BaseDamage { get; set; } = 3;
     public int BaseArmor { get; set; } = 2;
     public int Health { get; set; } = 60;
-    public List<IItem> _inventory = [];
-
-    public Character(string name)
-    {
-        Name = name;
-    }
+    public readonly List<IItem> Inventory = [];
+    public readonly List<IMinion> Pers = [];
     
-    public int Attack(Weapon weapon)
+    public int Attack()
     {
-        weapon.Apply(this);
+        Inventory.OfType<Weapon>().FirstOrDefault()?.Apply(this);
         return BaseDamage;
     }
 
-    public int Defense(Protection protection)
+    public int Defense()
     {
-        protection.Apply(this);
+        Inventory.OfType<Protection>().FirstOrDefault()?.Apply(this);
         return BaseArmor;
     }
 
@@ -49,7 +43,12 @@ public class Character
 
     public void AddInventory(IItem item)
     {
-        _inventory.Add(item);
+        Inventory.Add(item);
+    }
+
+    public override string ToString()
+    {
+        return $"Character:\n\tName: {Name}\n\tMaxHitPoints: {MaxHitPoints}";
     }
 }
 

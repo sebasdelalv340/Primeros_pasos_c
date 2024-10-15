@@ -1,8 +1,5 @@
 namespace Personaje;
 
-public class Shield: Protection
+public class Shield() : Protection("Shield", 2)
 {
-    public Shield() : base("Shield", 2)
-    {
-    }  
 }

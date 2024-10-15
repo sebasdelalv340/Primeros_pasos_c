@@ -1,16 +1,10 @@
 namespace Personaje;
 
-public abstract class Protection: IItem
+public abstract class Protection(string name, int armor): IItem
 {
-    public string Name { get; set; }
-    private int Armor { get; set; }
+    public string Name = name;
+    public int Armor = armor;
     
-    protected Protection(string name, int armor)
-    {
-        Name = name;
-        Armor = armor;
-    }
-
     public virtual void Apply(Character character)
     {
         character.BaseArmor += Armor;

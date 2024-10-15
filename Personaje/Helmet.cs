@@ -1,8 +1,5 @@
 namespace Personaje;
 
-public class Helmet: Protection
+public class Helmet(): Protection("Helmet", 1)
 {
-    public Helmet() : base("Helmet", 1)
-    {
-    }
 }

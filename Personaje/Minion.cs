@@ -2,7 +2,7 @@ namespace Personaje;
 
 public abstract class Minion: IMinion
 {
-    public string Name { get; set; }
+    private string Name { get; set; }
     private int Damage { get; set; }
     private int Health { get; set; }
 
